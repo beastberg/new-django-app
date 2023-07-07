@@ -1,0 +1,15 @@
+
+
+<h2>Exam</h2>
+<ul>
+  {% for question in exam.questions %}
+    <li>
+      <h4>{{ question.text }}</h4>
+      <ul>
+        {% for choice in question.choices %}
+          <li>{{ choice.text }}</li>
+        
+      </ul>
+    </li>
+  
+</ul>
